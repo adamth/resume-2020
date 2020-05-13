@@ -342,6 +342,7 @@ const Home = () => (
         .skills {
           display: flex;
           justify-content: space-between;
+          flex-wrap: wrap;
         }
         .content {
           padding: 20px;

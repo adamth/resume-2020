@@ -44,6 +44,16 @@ const SectionSkill = ({ title, skills }) => (
         .bread-and-butter {
           margin-left: 10px;
         }
+        @media (max-width: 720px) {
+          .title {
+            font-size: 18px;
+            line-height: 20px;
+          }
+          .skill-container {
+            flex: 0 50%;
+            margin-top: 20px;
+          }
+        }
       `}
     </style>
   </div>

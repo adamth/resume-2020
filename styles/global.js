@@ -29,6 +29,7 @@ export default css.global`
   a {
     color: ${theme.colours.link};
     padding: 5px 0;
+    font-family: ${theme.fontFamily.sansSerif}
   }
   a:hover {
     color: ${theme.colours.linkHover};

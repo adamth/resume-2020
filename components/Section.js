@@ -32,6 +32,16 @@ const Section = ({ title, icon, pageBreak, children }) => (
           font-size: 36px;
           line-height: 43px;
         }
+        @media (max-width: 720px) {
+          .heading {
+            font-size: 26px;
+          }
+          .icon {
+            width: 70px;
+            left: -10px;
+            bottom: -5px;
+          }
+        }
       `}
     </style>
   </div>

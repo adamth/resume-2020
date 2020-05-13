@@ -3,48 +3,49 @@ import PropTypes from 'prop-types';
 import theme from '../styles/theme';
 
 const Project = ({ icon, link, title, info, subtitle }) => (
-  <div className="project-container">
-    <div className="project">
-      {icon && (
-        <div className="icon">
-          <img src={icon} alt="project icon" />
-        </div>
-      )}
-      <div className="title-container">
+  <div className="project">
+    {icon && (
+      <div className="icon">
+        <img src={icon} alt="project icon" />
+      </div>
+    )}
+    <div className="project-content">
+      <div className="heading-container">
         <div className="title">{title}</div>
+        <div className="info">{info}</div>
+      </div>
+      <div>
         {link && <a href={link}>{link}</a>}
         <div className="subtitle">{subtitle}</div>
       </div>
     </div>
-    <div className="info">{info}</div>
+
     <style jsx>
       {`
         .icon img {
           width: 60px;
         }
-        .project-container {
-          display: flex;
-          flex-direction: row;
-          margin: 60px 0;
-          justify-content: space-between;
-          min-height: 100px;
-        }
         .project {
           display: flex;
           flex-direction: row;
+          margin-top: 20px;
+          margin-bottom: 60px;
         }
-        .title-container {
-          padding: 0 20px;
-          font-family: ${theme.fontFamily.sansSerif};
+        .project-content {
+          width: 100%;
+          padding-left: 20px;
+        }
+        .heading-container {
           display: flex;
-          flex-direction: column;
+          flex-direction: row;
           justify-content: space-between;
-          margin-bottom: 20px;
+          font-family: ${theme.fontFamily.sansSerif};
         }
         .title {
           font-weight: 300;
           font-size: 24px;
           line-height: 29px;
+          margin-bottom: 10px;
         }
         .info {
           font-size: 18px;
@@ -57,6 +58,18 @@ const Project = ({ icon, link, title, info, subtitle }) => (
           font-style: italic;
           font-size: 24px;
           line-height: 22px;
+          margin-top: 10px;
+        }
+        @media (max-width: 720px) {
+          .icon img {
+            width: 40px;
+          }
+          .title {
+            font-size: 18px;
+          }
+          .subtitle {
+            font-size: 14px;
+          }
         }
       `}
     </style>

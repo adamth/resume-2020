@@ -53,6 +53,23 @@ const Header = ({ name, subheading, email, phone }) => (
           font-size: 15px;
           text-align: right;
         }
+        @media (max-width: 720px) {
+          .header {
+            flex-direction: column;
+          }
+          .name {
+            font-size: 44px;
+            line-height: 50px;
+          }
+          .name:after {
+            width: 90%;
+          }
+          .contact {
+            margin-top: 20px;
+            align-self: flex-start;
+            text-align: left;
+          }
+        }
       `}
     </style>
   </div>

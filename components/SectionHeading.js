@@ -39,6 +39,14 @@ const SectionHeading = ({ title, info, subtitle }) => (
           line-height: 22px;
           color: ${theme.colours.grey};
         }
+        @media (max-width: 720px) {
+          .title {
+            font-size: 20px;
+          }
+          .title-container {
+            flex-direction: column;
+          }
+        }
       `}
     </style>
   </div>
