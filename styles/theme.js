@@ -1,7 +1,7 @@
 const theme = {
   fontFamily: {
-    sansSerif: 'PoynterGothicText, sans-serif',
-    serif: 'Big Moore, serif',
+    sansSerif: 'poynter-gothic-text, sans-serif',
+    serif: 'bigmoore, serif',
   },
   colours: {
     yellow: '#FFD717',
