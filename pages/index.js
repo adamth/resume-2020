@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import ReactGA from 'react-ga';
 import Header from '../components/Header';
 import Intro from '../components/Intro';
 import globalStyles from '../styles/global';
@@ -8,6 +9,9 @@ import SectionHeading from '../components/SectionHeading';
 import Project from '../components/Project';
 import { formatTimePeriod } from '../components/uitl';
 import SectionSkill from '../components/SectionSkill';
+
+ReactGA.initialize('UA-111622045-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const Home = () => (
   <div>
@@ -213,8 +217,8 @@ const Home = () => (
         <h3 className="sans">Key Achievements</h3>
         <ul>
           <li>
-            Invited to be on discussion panel at Qlik &quot;Visualise your world&quot;
-            conference in 2015 as a subject matter expert.
+            Invited to be on discussion panel at Qlik &quot;Visualise your
+            world&quot; conference in 2015 as a subject matter expert.
           </li>
           <li>
             Implemented git version control for all software projects (GitLab)
@@ -231,7 +235,7 @@ const Home = () => (
         title="Senior Service Desk Analyst"
         info={`Wesley Mission Victoria, ${formatTimePeriod(
           new Date(2010, 0, 1),
-          new Date(2013, 3, 1)
+          new Date(2013, 3, 1),
         )}`}
         subtitle="Wesley Mission cares for and supports disadvantaged and vulnerable Victorians through a range of community-based services"
       />
@@ -291,7 +295,8 @@ const Home = () => (
             target="_blank"
           >
             Instagram
-          </a> if that&apos;s of interest!
+          </a>{' '}
+          if that&apos;s of interest!
         </li>
         <li>
           Drones - I have built a number of racing and acrobatic drones and have
