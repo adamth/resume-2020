@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import theme from '../styles/theme';
 
 const Section = ({ title, icon, pageBreak, children }) => (
   <div className="section">
@@ -31,6 +32,7 @@ const Section = ({ title, icon, pageBreak, children }) => (
           font-weight: light;
           font-size: 36px;
           line-height: 43px;
+          font-family: ${theme.fontFamily.serif};
         }
         @media (max-width: 720px) {
           .heading {
