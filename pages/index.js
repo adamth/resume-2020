@@ -2,7 +2,6 @@ import React from 'react';
 import Head from 'next/head';
 import Header from '../components/Header';
 import Intro from '../components/Intro';
-import globalStyles from '../styles/global';
 import Section from '../components/Section';
 import SectionHeading from '../components/SectionHeading';
 import Project from '../components/Project';
@@ -314,30 +313,25 @@ const Home = () => (
       <Project
         icon="/icon-logbookr.png"
         title="Logbookr"
-        link="https://www.logbookr.com"
+        link="https://logbookr.com"
         info="Swift"
         subtitle="Vehicle logbooking app for iOS"
       />
       <Project
         icon="/icon-dev-clock.png"
         title="Dev Clock App"
-        link="https://www.devclockapp.com"
+        link="https://devclockapp.com"
         info="Flutter/Dart"
         subtitle="Film development timer and chemistry register for iOS and Android"
       />
       <Project
         icon="/icon-viper.png"
         title="Viper Constructions"
-        link="https://www.viperconstructions.com.au"
+        link="https://viperconstructions.com.au"
         info="Vue"
         subtitle="Promotional website for local small business"
       />
     </Section>
-
-    <style jsx global>
-      {globalStyles}
-    </style>
-
     <style jsx>
       {`
         .skills {

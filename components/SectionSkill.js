@@ -54,6 +54,12 @@ const SectionSkill = ({ title, skills }) => (
             margin-top: 20px;
           }
         }
+        @media print {
+          .skill-container {
+            flex: 0 25%;
+            margin-top: 20px;
+          }
+        }
       `}
     </style>
   </div>

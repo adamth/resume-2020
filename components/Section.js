@@ -37,13 +37,13 @@ const Section = ({ title, icon, pageBreak, children }) => (
         @media (max-width: 720px) {
           .heading {
             font-size: 26px;
+            margin-top: 100px;
           }
           .icon {
             width: 70px;
             left: -10px;
             bottom: -5px;
           }
-        }
       `}
     </style>
   </div>
