@@ -7,7 +7,7 @@ const SectionSkill = ({ title, skills }) => (
     <div className="title sans">{title}</div>
     <ul>
       {skills.map((skill) => (
-        <li className="skill">
+        <li key={skill} className="skill">
           <span className="skill-title">{skill.title}</span>
           {skill.bnb && (
             <span
@@ -62,7 +62,7 @@ const SectionSkill = ({ title, skills }) => (
 SectionSkill.propTypes = {
   title: PropTypes.string.isRequired,
   skills: PropTypes.arrayOf(
-    PropTypes.shape({ title: PropTypes.string, bnb: PropTypes.bool })
+    PropTypes.shape({ title: PropTypes.string, bnb: PropTypes.bool }),
   ).isRequired,
 };
 

@@ -1,17 +1,13 @@
 import React from 'react';
 import Head from 'next/head';
-import ReactGA from 'react-ga';
 import Header from '../components/Header';
 import Intro from '../components/Intro';
 import globalStyles from '../styles/global';
 import Section from '../components/Section';
 import SectionHeading from '../components/SectionHeading';
 import Project from '../components/Project';
-import { formatTimePeriod } from '../components/uitl';
+import { formatTimePeriod } from '../lib/uitl';
 import SectionSkill from '../components/SectionSkill';
-
-ReactGA.initialize('UA-111622045-1');
-ReactGA.pageview(window.location.pathname + window.location.search);
 
 const Home = () => (
   <div>
