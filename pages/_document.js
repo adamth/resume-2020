@@ -1,6 +1,5 @@
 import React from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
-import globalStyles from '../styles/global';
 import { GA_TRACKING_ID } from '../lib/gtag';
 
 export default class extends Document {
@@ -27,9 +26,6 @@ export default class extends Document {
           />
         </Head>
         <body>
-          <style jsx global>
-            {globalStyles}
-          </style>
           <Main />
           <NextScript />
         </body>

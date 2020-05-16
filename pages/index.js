@@ -6,6 +6,7 @@ import Section from '../components/Section';
 import SectionHeading from '../components/SectionHeading';
 import Project from '../components/Project';
 import { formatTimePeriod } from '../lib/uitl';
+import globalStyles from '../styles/global';
 import SectionSkill from '../components/SectionSkill';
 
 const Home = () => (
@@ -332,6 +333,9 @@ const Home = () => (
         subtitle="Promotional website for local small business"
       />
     </Section>
+    <style jsx global>
+      {globalStyles}
+    </style>
     <style jsx>
       {`
         .skills {
