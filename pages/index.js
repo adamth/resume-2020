@@ -321,14 +321,14 @@ const Home = () => (
       <Project
         icon="/icon-dev-clock.png"
         title="Dev Clock App"
-        link="https://www.devclockapp.com"
+        link="https://devclockapp.com"
         info="Flutter/Dart"
         subtitle="Film development timer and chemistry register for iOS and Android"
       />
       <Project
         icon="/icon-viper.png"
         title="Viper Constructions"
-        link="https://www.viperconstructions.com.au"
+        link="https://viperconstructions.com.au"
         info="Vue"
         subtitle="Promotional website for local small business"
       />
