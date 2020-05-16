@@ -48,14 +48,14 @@ const MofoEyesOnly = () => (
     <div>
       <p>
         Sure! There were a couple of things in the ad that specifically stood
-        out to me. Clearly the first one was having a strong gif (pronounced gif)
-        game. I think I'll let that speak for itself. The other was{' '}
-        <q>Making things look good is your jam</q>. I take a huge amount of
-        pride and have developed a reputation amongst my peers as being someone
-        who will always go the extra mile to add a bit of flair to any frontend
-        work I do. I firmly believe that when something looks good, it works
-        better, and good UI design is as important as good software design to
-        deliver maximum value to the client.
+        out to me. Clearly the first one was having a strong gif (pronounced
+        gif) game. I think I'll let that speak for itself. The second, I love
+        wine. And finally, <q>Making things look good is your jam</q>. I take a
+        huge amount of pride and have developed a reputation amongst my peers as
+        being someone who will always go the extra mile to add a bit of flair to
+        any frontend work I do. I firmly believe that when something looks good,
+        it works better, and good UI design is as important as good software
+        design to deliver maximum value to the client.
       </p>
       <p>
         Your listed requirements closely match my experience and skill set. A
