@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import globalStyles from '../styles/global';
 import theme from '../styles/theme';
+import { yearsOfExperience } from '../lib/uitl';
 
 const MofoEyesOnly = () => (
   <div className="container">
@@ -35,7 +36,7 @@ const MofoEyesOnly = () => (
         <a href="https://www.seek.com.au/job/41320407?type=standard#searchRequestToken=fc055c8f-0b73-4a44-a401-709d15333585">
           advertised on seek
         </a>
-        . Being a full stack developer with over 7 years experience I&apos;d
+        . Being a full stack developer with over {yearsOfExperience} years experience I&apos;d
         like to throw my hat in the ring for consideration.
       </p>
     </div>

@@ -5,7 +5,7 @@ import Intro from '../components/Intro';
 import Section from '../components/Section';
 import SectionHeading from '../components/SectionHeading';
 import Project from '../components/Project';
-import { formatTimePeriod } from '../lib/uitl';
+import { formatTimePeriod, yearsOfExperience } from '../lib/uitl';
 import globalStyles from '../styles/global';
 import SectionSkill from '../components/SectionSkill';
 
@@ -26,7 +26,7 @@ const Home = () => (
 
     <Intro>
       <span>
-        5+ years experienced and result oriented web developer with a knack for
+        {yearsOfExperience}+ years experienced and result oriented web developer with a knack for
         delivering elegant, user-friendly software solutions effectively and
         efficiently. Applied competence in all stages of the software
         development life cycle including requirements gathering, infrastructure
