@@ -79,7 +79,7 @@ const MofoEyesOnly = () => (
             feature delivery. In this short time I have developed a strong
             reputation of being someone who is flexible enough to work on a wide
             range of projects, while also having deep knowledge of core
-            technologies in out stack.
+            technologies in our stack.
           </li>
           <li>
             The bulk of my work over the last couple of years has been with REST
