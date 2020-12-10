@@ -26,13 +26,13 @@ const Home = () => (
 
     <Intro>
       <span>
-        {yearsOfExperience}+ years experienced and result oriented web developer with a knack for
-        delivering elegant, user-friendly software solutions effectively and
-        efficiently. Applied competence in all stages of the software
-        development life cycle including requirements gathering, infrastructure
-        setup, coding and testing. Gained proficiency with a number of
-        programming languages and developed in-depth knowledge of latest
-        technologies as a result of working on numerous complex projects.
+        {yearsOfExperience}+ years experienced and result oriented web developer
+        with a knack for delivering elegant, user-friendly software solutions
+        effectively and efficiently. Applied competence in all stages of the
+        software development life cycle including requirements gathering,
+        infrastructure setup, coding and testing. Gained proficiency with a
+        number of programming languages and developed in-depth knowledge of
+        latest technologies as a result of working on numerous complex projects.
         Handles complex project management and coordination work very
         efficiently to deliver results. Looking forward to applying my diverse
         skill-set to a challenging software development role.
@@ -56,9 +56,11 @@ const Home = () => (
           ]}
         />
         <SectionSkill
-          title="Server"
+          title="Server/Backend"
           skills={[
+            { title: 'Gatsby', bnb: true },
             { title: 'Django', bnb: true },
+            { title: 'Rails', bnb: false },
             { title: 'Express', bnb: false },
           ]}
         />
@@ -73,9 +75,10 @@ const Home = () => (
         <SectionSkill
           title="Languages"
           skills={[
-            { title: 'Python', bnb: true },
             { title: 'JavaScript', bnb: true },
             { title: 'CSS/LESS/SCSS', bnb: true },
+            { title: 'Python', bnb: false },
+            { title: 'Ruby', bnb: false },
             { title: 'SQL', bnb: false },
             { title: 'Swift', bnb: false },
             { title: 'Dart', bnb: false },
@@ -84,10 +87,57 @@ const Home = () => (
       </div>
     </Section>
 
-    <Section title="Work Background" icon="/icon-square.svg" pageBreak>
+    <Section title="Work Background" icon="/icon-square.svg">
+      <SectionHeading
+        title="Software Engineer"
+        info={`Vinomofo, ${formatTimePeriod(new Date(2020, 5, 1))}`}
+        subtitle="Vinomofo is a leading Australian online wine retailer."
+      />
+      <section>
+        <h3 className="sans">Frontend</h3>
+        <ul>
+          <li>
+            Build a new frontend component library from the ground up using the
+            latest techniques and tools, such as styled components and
+            storybook. The new component library is now being used widely within
+            the company, ensuring brand consistency across projects and
+            increasing developer velocity.
+          </li>
+          <li>
+            Implement automatic frontend UI testing through Chromatic, enabling
+            the team to have greater confidence when deploying changes to
+            components, as well as automatic documentation generation. This has
+            also made testing frontend assets easier than ever, resulting in
+            more tests being run and overall a more reliable set of tools.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3 className="sans">Backend</h3>
+        <ul>
+          <li>
+            Develop the Gatsby build pipeline including data transformation,
+            incremental builds and automatic deployments
+          </li>
+          <li>Work on patches as required on the existing rails app</li>
+        </ul>
+      </section>
+      <section>
+        <h3 className="sans">Leadership</h3>
+        <ul>
+          <li>
+            Work effectively remotely during the 2020 pandemic, ensuring strong
+            communication is maintained between the team and work is coordinated
+            effectively
+          </li>
+        </ul>
+      </section>
       <SectionHeading
         title="Web Developer"
-        info={`Alliance Software, ${formatTimePeriod(new Date(2018, 3, 1))}`}
+        info={`Alliance Software, ${formatTimePeriod(
+          new Date(2018, 3, 1),
+          new Date(2020, 5, 1)
+        )}`}
         subtitle="Alliance Software is a world-class agile software development agency specialising in complex web apps."
       />
       <section>
@@ -177,7 +227,7 @@ const Home = () => (
         title="Systems Analyst"
         info={`Mind Australia, ${formatTimePeriod(
           new Date(2013, 0, 1),
-          new Date(2018, 3, 1),
+          new Date(2018, 3, 1)
         )}`}
         subtitle="Mind Australia is one of the country's leading community-managed specialist mental health service providers"
       />
@@ -231,7 +281,7 @@ const Home = () => (
         title="Senior Service Desk Analyst"
         info={`Wesley Mission Victoria, ${formatTimePeriod(
           new Date(2010, 0, 1),
-          new Date(2013, 3, 1),
+          new Date(2013, 3, 1)
         )}`}
         subtitle="Wesley Mission cares for and supports disadvantaged and vulnerable Victorians through a range of community-based services"
       />
@@ -255,7 +305,7 @@ const Home = () => (
       </ul>
     </Section>
 
-    <Section title="Education" icon="/icon-circle.svg">
+    <Section title="Education" icon="/icon-circle.svg" pageBreak>
       <SectionHeading
         title="Deakin University"
         info="Bachelor of Information Technology, 2015"
@@ -314,14 +364,12 @@ const Home = () => (
       <Project
         icon="/icon-logbookr.png"
         title="Logbookr"
-        link="https://logbookr.com"
         info="Swift"
         subtitle="Vehicle logbooking app for iOS"
       />
       <Project
         icon="/icon-dev-clock.png"
         title="Dev Clock App"
-        link="https://devclockapp.com"
         info="Flutter/Dart"
         subtitle="Film development timer and chemistry register for iOS and Android"
       />
