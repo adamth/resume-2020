@@ -126,6 +126,10 @@ const Home = () => (
         <h3 className="sans">Leadership</h3>
         <ul>
           <li>
+            Mentor fellow developers in my areas of strength resulting in
+            improved knowledge sharing and upskilling of the team.
+          </li>
+          <li>
             Work effectively remotely during the 2020 pandemic, ensuring strong
             communication is maintained between the team and work is coordinated
             effectively
