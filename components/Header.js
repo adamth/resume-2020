@@ -9,6 +9,7 @@ const Header = ({ name, subheading, email, phone }) => (
       <span className="sans subheading">{subheading}</span>
     </div>
     <div className="contact sans">
+      <a href="http://adamth.com">adamth.com</a>
       <a href={`mailto:${email}`}>{email}</a>
       <a href={`tel:${phone}`}>{phone}</a>
     </div>
