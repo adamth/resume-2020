@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Intro from '../components/Intro';
 import Section from '../components/Section';
 import SectionHeading from '../components/SectionHeading';
+import PageBreak from '../components/PageBreak';
 import Project from '../components/Project';
 import { formatTimePeriod, yearsOfExperience } from '../lib/uitl';
 import globalStyles from '../styles/global';
@@ -39,7 +40,7 @@ const Home = () => (
       </span>
     </Intro>
 
-    <Section title="Technical Skills" icon="/icon-triangle.svg" pageBreak>
+    <Section title="Technical Skills" icon="/icon-triangle.svg">
       <span>
         I have varying levels of experience with a wide range of languages and
         technologies, but there are a few that I consider my bread and butter.
@@ -86,6 +87,7 @@ const Home = () => (
         />
       </div>
     </Section>
+    <PageBreak />
 
     <Section title="Work Background" icon="/icon-square.svg">
       <SectionHeading
@@ -136,6 +138,7 @@ const Home = () => (
           </li>
         </ul>
       </section>
+      <PageBreak />
       <SectionHeading
         title="Web Developer"
         info={`Alliance Software, ${formatTimePeriod(
@@ -209,6 +212,7 @@ const Home = () => (
           </li>
         </ul>
       </section>
+      <PageBreak />
       <SectionHeading
         title="Founder and Developer"
         info={`Autopilot Digital, ${formatTimePeriod(new Date(2017, 0, 1))}`}
@@ -263,6 +267,7 @@ const Home = () => (
           </li>
         </ul>
       </section>
+      <PageBreak />
       <section>
         <h3 className="sans">Key Achievements</h3>
         <ul>
@@ -308,8 +313,8 @@ const Home = () => (
         </ul>
       </ul>
     </Section>
-
-    <Section title="Education" icon="/icon-circle.svg" pageBreak>
+    <PageBreak />
+    <Section title="Education" icon="/icon-circle.svg">
       <SectionHeading
         title="Deakin University"
         info="Bachelor of Information Technology, 2015"
@@ -329,7 +334,7 @@ const Home = () => (
       />
     </Section>
 
-    <Section title="Other Interests" icon="/icon-square-2.svg" pageBreak>
+    <Section title="Other Interests" icon="/icon-square-2.svg">
       <span>I have numerous hobbies that I pursue outside of work</span>
       <ul>
         <li>
@@ -358,6 +363,7 @@ const Home = () => (
         </li>
       </ul>
     </Section>
+    <PageBreak />
 
     <Section title="My Projects" icon="/icon-triangle-2.svg">
       <span>
