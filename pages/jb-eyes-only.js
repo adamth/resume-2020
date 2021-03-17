@@ -34,10 +34,10 @@ const JBEyesOnly = () => (
     <div>
       <p>Hello JB Hi-Fi!</p>
       <p>
-        I am writing today to express my interest in the full stack developer
-        role you recently{' '}
+        I am writing today to express my interest in the senior front end
+        developer role you recently{' '}
         <a href="https://careers.jbhifi.com.au/cw/en/job/494787/senior-front-end-software-developer">
-          advertised on you your website
+          advertised on your website
         </a>
         . Being a full stack developer with over {yearsOfExperience} years
         experience I&apos;d like to throw my hat in the ring for consideration.
